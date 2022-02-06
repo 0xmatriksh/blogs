@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "/blogs"
-url: "https://tprototype.github.io"
+baseurl: ""
+url: "https://www.kishmatbhattarai.info.np/"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Kishmat Blogs # site's title
