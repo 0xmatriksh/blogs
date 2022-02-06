@@ -3,6 +3,7 @@ layout: "post"
 title: "Things you should know about Python as a Developer"
 date: 2022-02-01 17:50:59 +5:45
 tags: [python, thread, gil]
+excerpt: "Hey readers, today I am going to write something interesting about Python that every developer should learn about."
 # categories: basic
 ---
 
