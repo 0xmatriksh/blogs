@@ -3,6 +3,7 @@ layout: post
 title: "Prerequisite for Data Science Developers in Python"
 date: 2022-02-01 19:54:42 +0545
 tags: [data science, python]
+excerpt: "This blog discuss about different neccessary tools and library for every Data Science developer in Python"
 # categories: jekyll update
 ---
 

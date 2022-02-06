@@ -3,6 +3,7 @@ layout: post
 title: "Understanding Web In General"
 date: 2022-02-05 21:54:42 +0545
 tags: [http, www, web]
+excerpt: "This is about the how the web works or to be precise what happens unders the hood when we visit a website"
 ---
 
 ![alt text]({{ '/assets/img/posts/webindepth.jpg' | relative_url}}){: .center-image }
