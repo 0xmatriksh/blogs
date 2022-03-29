@@ -10,5 +10,4 @@ I am **Kishmat Bhattarai**.
 I am developer and a CSIT student.
 I code to solve the problems and also enjoy sharing my ideas and opinion through blogs.
 
-And Here is my Portfolio Site
-[Live Here](http://kishmat.com.np/)
+Email: kishmat17@gmail.com

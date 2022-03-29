@@ -7,9 +7,11 @@ excerpt: "This blog discuss about linear regression used as algorithm in machine
 # categories: jekyll update
 ---
 
-When we start learning about the algorithms in Machine Learning, the first algorithm we encounter with or books introduce to us is Linear Regression algorithm. It is one of the most used atleast at begineer phase of any Data Science wannabes. Most of us have heard about this algo before, not? atleast you heard it when I mentioned above.
+![alt text]({{ '/assets/img/posts/lr.jpg' | relative_url}}){: .center-image }
 
-Linear Regression is the algorithm used for Regression based Supervised learning. In regression we predict the actual value of the output, unlike Classification based which predict the category the output lies on (for eg: True or False, Dog or Cat). As we need a actual value as output for Regression the linear regression algorithm gives us the linear line which tells the property of the data. For example y = 5x + 2. For input value of x as 4, the output value of y will be 22.
+When we start learning about the algorithms in Machine Learning, the first algorithm we encounter with is Linear Regression algorithm(for most of us). It is one of the most used algorithm used for Machine Learning. Most of us have heard about this algo before, not? atleast you heard it when I mentioned it above.
+
+Linear Regression is the algorithm used for Regression based Supervised learning. In regression, we predict the actual value of the output, unlike Classification based which predict the category the output lies on (for eg: True or False, Dog or Cat). As we need a actual value as output for Regression the linear regression algorithm gives us the linear line which tells the property of the data. For example y = 5x + 2. For input value of x as 4, the output value of y will be 22.
 
 Linear Regression(LR) are has different types, mainly Simple LR and Multiple LR. Simple LR is just the example we mentioned above. It has sinlge independent varialbe(input) x for single dependent varialbe(output) y which is actually dependent on x, is in the form of y = mx + b, where m is slope and b is y-intercept, which is defined for a particular line and shows two typical property of the line. So when we are doing machine learning with LR, our actual task is to find this line.
 
@@ -57,7 +59,7 @@ Y(cap) = mXi+b
 So E(m,b) = (summation from i to n) (Yi-mXi-b)^2
 Now our goal is to minimize this error(E).
 
-(3D figure)
+![alt text]({{ '/assets/img/posts/gradientdescent.png' | relative_url}}){: .center-image }
 
 We know that slope is 0 at the minimum point and the slope is given by the first order differentiation of the E.
 First, we differentiate E with respect to 'm' and differentiate it with respect to 'b'.
@@ -99,7 +101,38 @@ Similarly we have multiple linear regression where the equation is in form of
 where m in the number of features in input.
 And a plane is used instead of line in the (m+1)D space.
 
-So similarly, the error in each point is given by Yi-Y(cap). And the total error is given by E = e^T.e
+The above equation can be represented as : `Y = XB`, where B is betas(b0,b1,.....)
+
+So similar to simple linear regression, the error in each point is given by Yi-Y(cap). And the total error is given by E = e^T.e and replacing Y(cap) by XB.
+`E = (Y^T -Y^TXB - (XB)^TY + (XB)^TXB`
+
+When differentiating it with B, and equals to 0 for minimum point, we get:
+
+`B = (X^TX)^-1.X^T.Y`
+
+Now, when we implement it with code to make your own Multiple Linear Regression algorithm:
+
+```
+class MyLR:
+	def __init__(self):
+		self.coef_
+		self.intercept_
+
+	def fit(self,X_train,y_train):
+		X_train = np.insert(X_train,0,1,axis=1)
+
+		betas = np.linalg.inv(np.dot(X_train.T,X_Train)).dot(X_train.T).dot(y_train)
+		self.intercept_ = betas[0]
+		self.coef_ = betas[1:]
+
+	def predict(self,X_test):
+		y_pred = np.dot(X_test,self.coef_) + self.intercept_
+		return y_pred
+```
+
+This is the general approach for Linear Regression in closed form.
+
+I hope you understood something about Linear Regression from this article. If not, feel free to raise queries by contacting me. I will to try to solve your confusions.
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]: https://github.com/jekyll/jekyll
