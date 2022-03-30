@@ -3,7 +3,7 @@ layout: post
 title: "Understanding Linear Regression"
 date: 2022-03-28 21:44:42 +0545
 tags: [data science, python]
-excerpt: "This blog discuss about linear regression used as algorithm in machine learning implemented in Python"
+excerpt: "This blog discuss about linear regression, an algorithm in machine learning implemented in Python"
 # categories: jekyll update
 ---
 
@@ -13,18 +13,19 @@ When we start learning about the algorithms in Machine Learning, the first algor
 
 Linear Regression is the algorithm used for Regression based Supervised learning. In regression, we predict the actual value of the output, unlike Classification based which predict the category the output lies on (for eg: True or False, Dog or Cat). As we need a actual value as output for Regression the linear regression algorithm gives us the linear line which tells the property of the data. For example y = 5x + 2. For input value of x as 4, the output value of y will be 22.
 
-Linear Regression(LR) are has different types, mainly Simple LR and Multiple LR. Simple LR is just the example we mentioned above. It has sinlge independent varialbe(input) x for single dependent varialbe(output) y which is actually dependent on x, is in the form of y = mx + b, where m is slope and b is y-intercept, which is defined for a particular line and shows two typical property of the line. So when we are doing machine learning with LR, our actual task is to find this line.
+Linear Regression(LR) are has different types, mainly Simple LR and Multiple LR. Simple LR is just the example we mentioned above. It has sinlge independent varialbe(input) x for single dependent varialbe(output) y which is actually dependent on x, is in the form of y = mx + b, where m is slope and b is y-intercept, which is defined for a particular line,called Line of Regression and shows two typical property of the line. So when we are doing machine learning with LR, our actual task is to find this line.
 
 #### What exactly is m and b?
 
 Basically m also called slope is the weightage of x. That means by what parameter the value of x has weight on the value of y, by what amount he value of y depends on value of x.
 
 Whereas the b is the outlier. If the value of x = 0, what will be the value of y.
-(Figure to show slope and y-intercept)
+
+To understand intercept(b) : For example we have students number of present days as input data and their marks in final exam as output. In such case, if any student is never present in a class, then it is not necessary they have 0 in final exam. So outlers are necessary. Otherwise, it would have y = 0 for x = 0.
 
 Now, we understood what is Simple LR, how to implement in coding. For this, we have a well known machine learning library scikit-learn which has all the necessary machine learning algorithm and also other facility.
 
-One of the facilites is to split our input(x) and output(y) as train and test data.
+One of the facilites is to split our input(x) and output(y) as train and test data. It split such that they training set and test set are independent to each other. Otherwise the overfitting will occur.
 
 ```
 from sklearn.model_selection import train_test_split
@@ -51,6 +52,9 @@ b = lr.intercept_
 Basically to produce the a line of equation y = mx + b, the scikit-learn runs some logic, which is just the mathematics behind the Linear Regression. If we learn this logic, we can create our own <YourNameLinearRegression>.
 
 To find the value of m and b:
+
+Always keep in minde, Linear regression is error correction method.
+
 Let's assume the value of Y at Xi is Yi as per the linear regression's line but actually it was Y(cap) as per the the data. So here the error is Yi-Y(cap), which is squared to remove the negative element(because it could be up or down, which Yi-Y(cap) could be positive or negative).
 
 Y(cap) is the actual location of point so it can be written as:
@@ -104,6 +108,7 @@ And a plane is used instead of line in the (m+1)D space.
 The above equation can be represented as : `Y = XB`, where B is betas(b0,b1,.....)
 
 So similar to simple linear regression, the error in each point is given by Yi-Y(cap). And the total error is given by E = e^T.e and replacing Y(cap) by XB.
+
 `E = (Y^T -Y^TXB - (XB)^TY + (XB)^TXB`
 
 When differentiating it with B, and equals to 0 for minimum point, we get:
