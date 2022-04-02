@@ -82,8 +82,8 @@ We can implement this in code:
 ```
 class MyLR:
 	def __init__(self):
-		self.m
-		self.b
+		self.m = None
+		self.b = None
 	def fit(self,X_train,y_train):
 		num = 0
 		den = 0
@@ -91,10 +91,10 @@ class MyLR:
 		y_mean = y_train.mean()
 		for i in range(X_train.shape[0]):
 			num = num +  (X_train[i] - X_mean)(y_train[i]-y_mean)
-			den = den +  (X_train[i]-X_mean)^2
+			den = den +  (X_train[i]-X_mean)*X_train[i]-X_mean)
 		self.m = num/den
 		self.b = y_mean - m*(X_mean)
-	def predict(self,X_test): #takes single value
+	def predict(self,X_test):
 		return (self.m*X_test)-self.b
 ```
 
@@ -135,9 +135,9 @@ class MyLR:
 		return y_pred
 ```
 
-This is the general approach for Linear Regression in closed form.
+This is the general approach for Linear Regression in closed form, OLS method. Linear Regression can be done with Gradient Descent Technique also, more on that on the next blog.
 
-I hope you understood something about Linear Regression from this article. If not, feel free to raise queries by contacting me. I will to try to solve your confusions.
+I hope you understood something about Linear Regression from this article. Feel free to raise queries by contacting me. I will to try to solve your confusions.
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]: https://github.com/jekyll/jekyll
