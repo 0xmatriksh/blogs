@@ -9,9 +9,8 @@ avatar: assets/img/kishmat.png # Empty for no avatar in navbar
 favicon: assets/img/kishmat.png # Icon displayed in the tab
 
 # Header and footer text
-header_text: Hey y'll, Welcome. # Change Blog header text
-header_feature_image: assets/img/header/triangular.jpeg
-header_feature_image_responsive: true
+header_text: Change <code>header_text</code> in <code>_config.yml</code> # Change Blog header text
+header_feature_image: assets/img/header/header.png
 footer_text: >
   Author: <a href="https://kishmat.com.np">Kishmat Bhattarai</a>
 
