@@ -4,6 +4,7 @@ title: "Docker and Containerization"
 date: 2022-06-16 8:05:22 +0545
 tags: [docker, devops]
 excerpt: "This blog is about how we can implement containeraization with Docker"
+thumbnail: "/assets/img/posts/docker.png"
 # categories: jekyll update
 ---
 

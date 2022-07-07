@@ -4,7 +4,8 @@ url: "https://www.kishmatbhattarai.info.np/"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Kishmat Blogs # site's title
-description: "Sharing my thoughts here that pops up randomly" # used by search engines
+description: "Sharing my analysis and thoughts here that pops up randomly" # used by search engines
+keywords: python, data, data analysis, programming
 avatar: assets/img/kishmat.png # Empty for no avatar in navbar
 favicon: assets/img/kishmat.png # Icon displayed in the tab
 

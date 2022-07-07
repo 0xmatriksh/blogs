@@ -1,9 +1,10 @@
 ---
 layout: "post"
-title: "Tik Tok Boom"
+title: "Tiktok Boom"
 date: 2022-07-02 19:50:59 +5:45
 tags: [tikotk, data analysis]
 excerpt: "Hey readers, today I am going to write about analysis on Tiktok boom, reason behind it's massive success."
+thumbnail: "/assets/img/posts/tiktok.png"
 # categories: basic
 ---
 
@@ -11,7 +12,7 @@ excerpt: "Hey readers, today I am going to write about analysis on Tiktok boom, 
 
 ---
 
-**Tiktok**, the buzzing word among internet users these days. Tiktok, a video sharing platform owned by ByteDance has been one of the most visited social platforms in recent quarters. It has reportedly crossed 3 billion downloads in 2021.
+**Tiktok**, the buzzing word among internet users these days. Tiktok, a video sharing platform owned by ByteDance(a Chinese company) has been one of the most visited social platforms in recent quarters. It has reportedly crossed 3 billion downloads in 2021.
 
 Tiktok, where a normal user spends hours scrolling the videos, fed by the algorithm is making users more inclined towards this platform. TikTok is doing exceptionally well in terms of making the user devoted to this platform with its service which also can be clearly understandable from the data that, “Tiktok was the most visited site in 2021”. It is now outnumbering many big giants like Twitter and Snapchat.
 
@@ -43,24 +44,25 @@ And the app has gender users distribution as follows where the females leads mal
 
 ![alt text]({{ '/assets/img/posts/gender.png' | relative_url}}){: .center-image }
 
-While talking about the age demographic distribution of the Tiktok users. It seems 63% of the users are from 10-29 age.
+While talking about the age demographic distribution of the Tiktok users. It seems 63% of the users are from 10-29 age. This shows
+the app is very popular among teenage and youths.
 
 ![alt text]({{ '/assets/img/posts/age.png' | relative_url}}){: .center-image }
 
 Similarly, Tiktok is used by 18% of total internet users among the users above 18. That is a lot of numbers in fact.
 
-And a recent study showed that the user's session count increased by 30% in 1st quarter of 2022 by 30%. This shows that Tiktok is growing more.
+And a recent study showed that the user's session count increased by 30% in 1st quarter of 2022. This shows that Tiktok is growing more and more.
 
 To add more, Instagram instals down by 7% in the last quarter of 2021.
-All data shows that tiktok has successfully and brilliantly held the market and made a very excellent grasp on the market. This is now eyeing to the next level and maintain this or add more things on this revolutionary app. The way Tiktok handles the data it collects to understand its users and adapt and build excellent plans and execute is extraordinary and is very much deserving to get this popularity it is gaining now.
+All data shows that tiktok has successfully and brilliantly held the market and made a very excellent grasp on the market. This is now eyeing to the next level and maintain this or add more things on this revolutionary app. In my opinion, the way Tiktok works with the data it collects to understand its users and adapt and build excellent plans and execute is extraordinary and is very much deserving to get this popularity it is gaining now.
 
 ### Some Controversies
 
-Reading up to now we might assume or subconsciously have the idea that everything is going well for TikTok but in fact it is terribly wrong. There are almost like 2-3 big headlines per month describing “Why you should ban Tiktok” and many more news coming and most of them are from, yes you guessed it right haha, the US. And this concern is somewhat very necessary because it is unclear that the Tiktok may share the users data with the Chinese government due to their policy which is very very wrong. The users data for making the experience on the app good is very welcomed or may be for advertising. But direct lending of such crucial data of people around the world to any particular government is not acceptable. Because of this unclarity, there were recent actions of banning Tiktok in countries like India and Malaysia.
+Reading up to now we might assume or subconsciously have the idea that everything is going well for TikTok but in fact it is terribly wrong. There are almost like 2-3 big headlines per month describing “Why you should ban Tiktok” and many more news coming and most of them are from, yes you guessed it right haha, the United States. And this concern is somewhat very necessary because it is unclear that the Tiktok may share the users data with the Chinese government due to their policy which is very very wrong. The users data for making the experience on the app good is very welcomed or may be for advertising is also not a big concern. But direct lending of such crucial data of people around the world to any particular government is not acceptable. Because of this unclarity, there were recent actions of banning Tiktok in countries like India and Malaysia.
 
 ### Conclusion
 
-But it is absolutely ruling the current social media craziness going. People stay on the platform for 52 minutes on average each day. According to a recent survey, children between the ages of four and fifteen spend 90 minutes every day using the app. Tiktok is extremely addictive. We should understand that the app is doing great from its perspective to gain our attention with all its algorithms and recommendation systems.. Meanwhile, we should also understand our limits of social media usage and prevent ourselves from having its addiction.
+But it is absolutely ruling the current social media craziness going. People stay on the platform for 52 minutes on average each day. According to a recent survey, children between the ages of four and fifteen spend 90 minutes every day using the app. Tiktok is extremely addictive. We should understand that the app is doing great from its perspective to gain our attention with all its algorithms and recommendation systems. Meanwhile, we should also understand our limits of social media usage and prevent ourselves from having its addiction.
 
 Thank You.
 
